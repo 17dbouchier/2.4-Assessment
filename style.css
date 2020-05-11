@@ -23,9 +23,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-size:cover;
-  background-position:center;
-  flex-direction:column;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
 }
 
 .showcase h1 {
