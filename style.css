@@ -105,7 +105,10 @@
   width: 100%;
   height: 100%;
   /* visibility: hidden */
+<<<<<<< HEAD
   /* overflow: hidden */
+=======
+>>>>>>> ff711b41d8da7768e2f4fd9a0ec4dd2920d4ca2a
   display: flex;
   align-items: center;
   justify-content: center;
