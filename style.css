@@ -66,7 +66,7 @@
 /* Top and bottom lines */
 .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -105,10 +105,7 @@
   width: 100%;
   height: 100%;
   /* visibility: hidden */
-<<<<<<< HEAD
   /* overflow: hidden */
-=======
->>>>>>> ff711b41d8da7768e2f4fd9a0ec4dd2920d4ca2a
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +127,7 @@
 .showcase h1 {
   animation-name: fade-in-down;
   animation-duration: 3s;
+  animation-timing-function: ease-in-out;
   text-align: center;
   font-size: 8rem;
   font-family: 'Oswald', sans-serif;
@@ -156,6 +154,51 @@
   width: 100%;
   height: 100vh;
   opacity: 0.6;
+}
+
+.scroll-indicator {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-indicator span {
+  opacity: 0;
+  margin: -20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  transform: rotate(45deg);
+  animation: scroll-arrow 2s infinite;
+}
+
+.scroll-indicator span:nth-child(1) {
+  animation-delay: 3s;
+}
+
+.scroll-indicator span:nth-child(2) {
+  animation-delay: 3.2s;
+}
+
+.scroll-indicator span:nth-child(3) {
+  animation-delay: 3.4s;
+}
+
+@keyframes scroll-arrow {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 @media screen and (max-aspect-ratio: 1920/1080) {
