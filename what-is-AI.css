@@ -52,6 +52,7 @@
   box-sizing: border-box;
 }
 
+/* Configures size and colour of page banner and applies animation */
 .page-banner {
 	animation: slide-right 1.5s;
 	background-color: #0B1F4D;
@@ -59,9 +60,9 @@
 	height: 20vh;
 }
 
+/* Positions page header and applies animation */
 .page-header {
   animation: fade-in-down 4s;
-	transition: opacity 10s;
 	animation-delay: 0s;
   position: absolute;
   top: 10%;
@@ -75,6 +76,7 @@
   text-shadow: 0px 8px 10px black;
 }
 
+/* Positions page icon and applies animation */
 .page-icon {
 	animation: fade-in-down-icon 3s ease-in-out;
 	position: absolute;
@@ -83,14 +85,7 @@
 	height: 18vh;
 }
 
-.paragraph p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin: 30px 50px 0px 50px;
-  text-align: justify;
-  line-height: 24px;
-}
-
+/* Headers for paragraphs */
 .paragraph-header {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -99,10 +94,21 @@
   text-align: center;
 }
 
+/* Informational paragraphs */
+.paragraph p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 30px 50px 0px 50px;
+  text-align: justify;
+  line-height: 24px;
+}
+
+/* Configures proper font weight for bold */
 b {
   font-weight: 700;
 }
 
+/* Configures border and size for YouTube videos */
 iframe {
   border: solid 4px black;
   margin-top: 3%;
@@ -111,6 +117,7 @@ iframe {
   height: 315px;
 }
 
+/* Adjustments for mobile view */
 @media only screen and (max-width: 700px) {
   .page-header {
     font-size: 3rem;
