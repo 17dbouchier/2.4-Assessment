@@ -5,6 +5,7 @@
   (font-weight: 300, 400)
 */
 
+/* Fade-in-down effect for header */
 @keyframes fade-in-down {
 	from {
 		opacity: 0;
@@ -16,6 +17,35 @@
   }
 }
 
+/* Fade-in-down animation specifically for the icon */
+@keyframes fade-in-down-icon {
+	0% {
+		opacity: 0;
+		transform: translateX(95%);
+		transform: translateY(-100%);
+	}
+
+	/* To ensure that the icon does not appear until banner fills screen */
+	40% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+  }
+}
+
+/* Left-to-right slide animation for banner background color */
+@keyframes slide-right {
+  0% {
+		transform: translateX(-100%);
+  }
+  100% {
+		transform: translateX(0px);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,22 +53,19 @@
 }
 
 .page-banner {
-  display: block;
-  width: 100%;
-  position: relative;
-  /* border-bottom: solid 6px black; */
-}
-
-.showcase {
-  position: relative;
-  display: inline-block;
+	animation: slide-right 1.5s;
+	background-color: #0B1F4D;
+	width: 100%;
+	height: 20vh;
 }
 
 .page-header {
-  animation: fade-in-down 3s;
+  animation: fade-in-down 4s;
+	transition: opacity 10s;
+	animation-delay: 0s;
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 10%;
+  left: 20%;
   transform: translate( -50%, -50% );
   text-align: center;
   color: white;
@@ -46,6 +73,14 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   text-shadow: 0px 8px 10px black;
+}
+
+.page-icon {
+	animation: fade-in-down-icon 3s ease-in-out;
+	position: absolute;
+	top: 1%;
+	right: 5%;
+	height: 18vh;
 }
 
 .paragraph p {
