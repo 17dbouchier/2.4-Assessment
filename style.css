@@ -72,7 +72,6 @@ html {
   height: 80px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  border: 3px solid #ffffff;
 }
 
 /* Wrapper & border for hamburger icon, as well as adding centre line */
@@ -147,7 +146,7 @@ html {
   font-size: 40px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.8s;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -356,6 +355,20 @@ html {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
+}
+
+.img-column {
+  flex: 1;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 20px 5px 20px;
+}
+
+.column-img {
+  width: 40%;
+  border: solid black 5px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 /* MEDIA QUERIES */
