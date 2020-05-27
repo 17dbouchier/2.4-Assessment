@@ -496,7 +496,7 @@ footer {
 
 .inner-footer .logo-container {
   padding-left: 120px;
-  padding-top: 30px;
+  padding-top: 10px;
   width: 35%;
   float: left;
   height: 100%;
@@ -505,8 +505,10 @@ footer {
 }
 
 .inner-footer .logo-container img {
-  width: 100px;
+  width: 150px;
   height: auto;
+  border-radius: 50%;
+  border: solid 4px black;
 }
 
 .inner-footer .footer-col {
