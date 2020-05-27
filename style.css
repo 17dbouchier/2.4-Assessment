@@ -358,7 +358,6 @@ html {
 }
 
 .img-column {
-  width: 60%;
   position: relative;
   flex: 1;
   align-items: center;
@@ -368,10 +367,13 @@ html {
 }
 
 .column-img {
-  width: 60%;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
   border: solid black 5px;
   border-radius: 5px;
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  flex-wrap: wrap;
 }
 
 .img-heading {
@@ -399,27 +401,21 @@ html {
   position: absolute;
   background-color: rgba(0,0,0,0.5);
   border-radius: 5px;
-  height: 100%;
-  width: 60%;
+  height: 70%;
+  width: 100%;
 }
 
 .newsletter-img {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-heading {
-  position: absolute;
-  color: white;
   font-size: 4vw;
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
-  transform: translate(-50%, -50);
-}
-
-#newsletter-container {
-  margin: 0;
-  padding: 0;
-  align-items: center;
+  text-align: center;
 }
 
 footer {
