@@ -1,3 +1,5 @@
+$("#main").load(location.href + " #showcase");
+
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 document.getElementById("sidenav-links").style.opacity= "0";
