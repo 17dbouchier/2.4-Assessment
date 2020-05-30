@@ -198,3 +198,24 @@ footer {
     margin-top: 20px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  /* Adjustments for the footer */
+  .footer .inner-footer {
+    width: 90%;
+  }
+
+  .inner-footer .logo-container,
+  .inner-footer .footer-col {
+    width: 100%;
+    padding-left: 32px;
+  }
+
+  .logo-container {
+    padding-bottom: 50px;
+  }
+
+  .footer-col {
+    padding-bottom: 12px;
+  }
+}
