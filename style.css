@@ -321,40 +321,50 @@ html {
 
 /* Applies specific flex properties to each column */
 .column {
+  height: 45vw;
+  position: relative;
+  text-align: center;
   flex: 1;
-  align-items: center;
   background-color: #ededed;
-  padding-top: 80px;
   border-radius: 10px;
   margin: 5px 20px 5px 20px;
 }
 
 /* Stylises icon within columns */
 .icon {
-  width: 24vh;
+  width: 16vw;
+  height: auto;
   border-radius: 50%;
   border: solid 4px white;
 }
 
 /* Positions and stylises header within columns */
 .column-heading {
-  font-size: 3rem;
+  display: flex;
+  font-size: 5vw;
   font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 10px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: 30%;
+  text-shadow: 0px 5px 10px #000;
 }
 
 /* Positions and stylises subheader within columns */
 .column-subhead {
-  font-size: 2rem;
+  position: absolute;
+  color: white;
+  text-shadow: 0px 5px 10px #000;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin: 20px 40px 18% 40px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px;
+  font-weight: 200;
+  font-size: 2vw;
+  top: 60%;
+}
+
+.col-overlay-1 {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Contains columns for img section */
@@ -444,6 +454,8 @@ html {
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .newsletter-subhead {
@@ -584,7 +596,27 @@ footer {
   .section-heading {
     font-size: 3rem;
   }
-  
+
+  .container {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+
+  .column-heading {
+    font-size: 8vw;
+  }
+
+  .column-subhead {
+    font-size: 4vw;
+    padding: 10px;
+  }
+
   .img-container {
     content: "";
     display: table;
