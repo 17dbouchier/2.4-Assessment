@@ -330,12 +330,15 @@ html {
   margin: 5px 20px 5px 20px;
 }
 
-/* Stylises icon within columns */
-.icon {
-  width: 16vw;
-  height: auto;
-  border-radius: 50%;
-  border: solid 4px white;
+/* Stylises image within columns */
+.column-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid black 5px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  flex-wrap: wrap;
 }
 
 /* Positions and stylises header within columns */
@@ -361,74 +364,7 @@ html {
   top: 60%;
 }
 
-.col-overlay-1 {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-/* Contains columns for img section */
-.img-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 10%;
-  align-content: center;
-  padding: 5px;
-  margin-top: 20px;
-}
-
-/* Applies flex property to each column */
-.img-container div {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  align-items: center;
-}
-
-.img-column {
-  width: 45%;
-  height: 45vw;
-  position: relative;
-  flex: 1;
-  align-items: center;
-  border-radius: 10px;
-  margin: 5px 20px 5px 20px;
-  text-align: center;
-}
-
-.column-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: solid black 5px;
-  border-radius: 5px;
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-  flex-wrap: wrap;
-}
-
-.img-heading {
-  display: flex;
-  font-size: 5vw;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  color: white;
-  position: absolute;
-  top: 30%;
-  text-shadow: 0px 5px 10px #000;
-}
-
-.img-subhead {
-  position: absolute;
-  color: white;
-  text-shadow: 0px 5px 10px #000;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 2vw;
-  top: 60%;
-}
-
+/* Adds and positions a transluscent color overlay on columns */
 .col-overlay {
   position: absolute;
   background-color: rgba(0,0,0,0.5);
@@ -437,11 +373,13 @@ html {
   width: 100%;
 }
 
+/* Contains all elements within 'newsletter' section */
 .newsletter-container {
   position: relative;
   text-align: center;
 }
 
+/* Positions the image within 'newsletter' section */
 .newsletter-img {
   position: relative;
   width: 100%;
@@ -449,6 +387,7 @@ html {
   padding: 0;
 }
 
+/* Positions and sizes the heading within 'newsletter' section */
 .newsletter-heading {
   font-size: 4vw;
   font-family: 'Oswald', sans-serif;
@@ -458,6 +397,7 @@ html {
   color: white;
 }
 
+/* Positions and sizes the subheader within 'newsletter' section */
 .newsletter-subhead {
   position: absolute;
   color: white;
@@ -469,6 +409,7 @@ html {
   left: 50%;
 }
 
+/* These id's are to ensure that the two separate subheads are slightly different in size and position */
 #nwsh-1 {
   font-size: 2.5vw;
   transform: translate(-50%, -140%);
@@ -479,6 +420,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
+/* Positions and sizes the 'subscribe' button */
 .newsletter-button {
   position: absolute;
   color: #494949;
@@ -492,6 +434,7 @@ html {
   transform: translate(-50%, -140%);
 }
 
+/* Stylises the link for the 'subscribe' button */
 .newsletter-button a {
   text-decoration: none;
   color: white;
@@ -500,6 +443,7 @@ html {
   letter-spacing: 1.2px;
 }
 
+/* Code for glowing effect when user hovers on 'subscribe' button */
 .newsletter-button:hover {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -508,6 +452,7 @@ html {
   cursor: pointer;
 }
 
+/* Foundational code for the footer section */
 footer {
   display: block;
   padding: 30px 0px;
@@ -519,6 +464,7 @@ footer {
   overflow: hidden;
 }
 
+/* Code for the content within the footer */
 .inner_footer {
   display: block;
   margin: 0 auto;
@@ -526,6 +472,7 @@ footer {
   height: 100%;
 }
 
+/* Sizes and positions the logo within the footer */
 .inner-footer .logo-container {
   padding-left: 120px;
   padding-top: 10px;
@@ -543,6 +490,7 @@ footer {
   border: solid 4px black;
 }
 
+/* Sizes and positions each column within the footer */
 .inner-footer .footer-col {
   width: calc(21.66% - 20px);
   margin-right: 10px;
@@ -551,10 +499,12 @@ footer {
   height: 100%;
 }
 
+/* Positions final column within footer */
 .inner-footer .footer-col:last-child {
   margin-right: 0;
 }
 
+/* Styles for footer column headers */
 .inner-footer .footer-col h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
@@ -564,6 +514,7 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Styles and positioning for footer links */
 .inner-footer .footer-col a {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -593,46 +544,31 @@ footer {
 /* Adjustments for mobile view */
 
 @media only screen and (max-width: 900px) {
+  /* Makes section headings smaller */
   .section-heading {
     font-size: 3rem;
   }
 
+  /* Changes behavior of containers */
   .container {
     content: "";
     display: table;
     clear: both;
   }
 
+  /* Changes sizing of columns to take up full screen width */
   .column {
     width: 100%;
     margin: 10px 0 10px 0;
   }
 
+  /* Makes column headings bigger */
   .column-heading {
     font-size: 8vw;
   }
 
+  /* Makes column subheadings bigger */
   .column-subhead {
-    font-size: 4vw;
-    padding: 10px;
-  }
-
-  .img-container {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .img-column {
-    width: 100%;
-    margin: 10px 0 10px 0;
-  }
-
-  .img-heading {
-    font-size: 8vw;
-  }
-
-  .img-subhead {
     font-size: 4vw;
     padding: 10px;
   }
