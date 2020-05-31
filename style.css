@@ -61,8 +61,6 @@ html {
 
 /* Button which activates navigation element */
 .menu-btn {
-  animation: fade-in-down 3s ease-in-out;
-  animation-delay: 3s;
   position: absolute;
   top: 10px;
   left: 10px;
