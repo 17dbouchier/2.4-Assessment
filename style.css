@@ -373,51 +373,16 @@ html {
   width: 100%;
 }
 
-/* Contains all elements within 'newsletter' section */
-.newsletter-container {
-  position: relative;
-  text-align: center;
-}
-
-/* Positions the image within 'newsletter' section */
-.newsletter-img {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Positions and sizes the heading within 'newsletter' section */
-.newsletter-heading {
-  font-size: 4vw;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-/* Positions and sizes the subheader within 'newsletter' section */
-.newsletter-subhead {
-  position: absolute;
-  color: white;
-  font-size: 2vw;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-}
-
 /* These id's are to ensure that the two separate subheads are slightly different in size and position */
 #nwsh-1 {
-  font-size: 2.5vw;
-  transform: translate(-50%, -140%);
+  font-size: 4vw;
+  top: 20%;
+  padding: 20px;
 }
 
 #nwsh-2 {
-  font-size: 2vw;
-  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  top: 48%;
 }
 
 /* Positions and sizes the 'subscribe' button */
@@ -427,18 +392,18 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   background: #494949;
-  padding: 20px;
-  border: 4px solid #fff;
+  padding: 1% 5%;
+  border: 0.5vw solid #fff;
   display: inline-block;
   transition: all 0.4s ease 0s;
-  transform: translate(-50%, -140%);
+  bottom: 20%;
 }
 
 /* Stylises the link for the 'subscribe' button */
 .newsletter-button a {
   text-decoration: none;
   color: white;
-  font-size: 32px;
+  font-size: 3.5vw;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1.2px;
 }
@@ -571,6 +536,16 @@ footer {
   .column-subhead {
     font-size: 4vw;
     padding: 10px;
+  }
+
+  #nwsh-1 {
+    font-size: 4vw;
+    top: 15%;
+  }
+
+  #nwsh-2 {
+    font-size: 3.5vw;
+    top: 42%;
   }
 
   /* Adjustments for the footer */
