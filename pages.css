@@ -159,7 +159,7 @@ b {
 iframe {
   border: solid 4px black;
   margin-top: 3%;
-  border-radius: 4px;
+  border-radius: 24px;
   width: 40vw;
   height: 330px;
 }
