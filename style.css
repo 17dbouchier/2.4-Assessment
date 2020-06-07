@@ -299,15 +299,6 @@ html {
   margin-top: 20px;
 }
 
-/* Applies flex property to each column */
-.container div {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  align-items: center;
-}
-
 /* Applies specific flex properties to each column */
 .column {
   height: 45vw;
@@ -315,8 +306,13 @@ html {
   text-align: center;
   flex: 1;
   background-color: #ededed;
-  border-radius: 10px;
+  border-radius: 24px;
   margin: 5px 20px 5px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
 }
 
 /* Stylises image within columns */
@@ -325,7 +321,7 @@ html {
   height: 100%;
   object-fit: cover;
   border: solid black 5px;
-  border-radius: 5px;
+  border-radius: 24px;
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
   flex-wrap: wrap;
 }
@@ -357,7 +353,7 @@ html {
 .col-overlay {
   position: absolute;
   background-color: rgba(0,0,0,0.5);
-  border-radius: 5px;
+  border-radius: 24px;
   height: 100%;
   width: 100%;
 }
@@ -383,7 +379,7 @@ html {
   background: #494949;
   padding: 1% 5%;
   border: 0.5vw solid #fff;
-  border-radius: 5px;
+  border-radius: 24px;
   display: inline-block;
   transition: all 0.4s ease 0s;
   bottom: 20%;
