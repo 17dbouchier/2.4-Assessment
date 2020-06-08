@@ -56,12 +56,13 @@
 
 /* Style the navigation menu */
 .navbar {
-	animation: slide-right 1.5s ease-in-out;
+	animation: slide-right 5s ease-in-out;
 	top: 0;
 	position: fixed;
   width: 100%;
   background-color: rgba(0,0,0,0.8);
   overflow: auto;
+	z-index: 1;
 }
 
 /* Navigation links */
@@ -90,10 +91,11 @@
 
 /* Configures size and colour of page banner and applies animation */
 .page-banner {
-	animation: slide-right 1.5s ease-in-out;
+	animation: slide-right 2s ease-in-out;
 	background-color: #0B1F4D;
 	width: 100%;
 	height: 25vh;
+	z-index: 0;
 }
 
 /* Positions page header and applies animation */
@@ -114,7 +116,7 @@
 
 /* Positions page icon and applies animation */
 .page-icon {
-	animation: fade-in-down-icon 3s ease-in-out;
+	animation: fade-in-down-icon 5s ease-in-out;
 	position: absolute;
 	top: 7%;
 	right: 5%;
@@ -148,11 +150,20 @@
   margin: 2.5% 50px 0px 50px;
   text-align: justify;
   line-height: 24px;
+	font-size: 18px;
 }
 
 /* Configures proper font weight for bold */
 b {
   font-weight: 700;
+}
+
+.paragraph-hook {
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 48px;
+	text-align: center;
 }
 
 /* Configures border and size for YouTube videos */
@@ -246,8 +257,8 @@ footer {
   }
 
 	.page-icon {
-		height: 14vh;
-		top: 8%;
+		height: 20vw;
+		top: 9%;
 	}
 
 	.column {
