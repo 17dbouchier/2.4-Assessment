@@ -320,7 +320,7 @@ footer {
 .inner-footer .footer-col {
   width: calc(21.66% - 20px);
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 60px;
   float: left;
   height: 100%;
 }
@@ -333,7 +333,7 @@ footer {
 /* Styles and positions footer headers */
 .inner-footer .footer-col h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   color: black;
   display: block;
   width: 100%;
@@ -343,7 +343,7 @@ footer {
 /* Styles and positions footer links */
 .inner-footer .footer-col a {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: black;
   display: block;
   width: 100%;
@@ -409,10 +409,11 @@ footer {
     width: 90%;
   }
 
-  .inner-footer .logo-container,
+	.inner-footer .logo-container,
   .inner-footer .footer-col {
     width: 100%;
     padding-left: 32px;
+    margin-left: 10px;
   }
 
   .logo-container {
