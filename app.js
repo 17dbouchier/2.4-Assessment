@@ -39,6 +39,13 @@ window.addEventListener('resize', () => {
   }
 });
 
+// Makes columns in HTML clickable links
+$(document).ready(function () {
+  $(document.body).on("click", "div[data-href]", function () {
+    window.location.href = this.dataset.href;
+  });
+});
+
 var x = window.matchMedia("(max-width: 1055px)")
 mobileDeviceFunction(x) // Call listener function at run time
 x.addListener(mobileDeviceFunction) // Attach listener function on state changes
