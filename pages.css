@@ -46,6 +46,7 @@
   }
 }
 
+/* Sets default attributes */
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +55,7 @@
 	list-style: none;
 }
 
-/* Style the navigation menu */
+/* Styles and positions the fixed-to-top navigation menu */
 .navbar {
 	animation: slide-right 2s ease-in-out;
 	top: 0;
@@ -67,6 +68,7 @@
 
 /* Navigation links */
 .navbar a {
+	position: relative;
 	font-family: 'Roboto', sans-serif;
   float: left;
   padding: 12px;
@@ -74,17 +76,41 @@
 	opacity: 0.6;
   text-decoration: none;
   font-size: 20px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
+  width: 25%;
+  text-align: center;
 	transition: opacity 0.4s;
 }
 
-/* Add a background color on mouse-over */
+/* Sets the parameters for the 'underline' effect for nav links */
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: center center;
+  transition: transform 0.25s ease-out;
+}
+
+/* Shows the 'underline' effect when user hovers on nav link */
+.navbar a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Further highlights nav link when user hovers */
 .navbar a:hover {
   opacity: 1;
 }
 
-/* Style the current/active link */
+/* Styles the current/active nav link w/ underline */
+.navbar a.active::before {
+	transform: scaleX(1);
+}
+
+/* Styles the current/active nav link w/ white colour text */
 .navbar a.active {
 	opacity: 1;
 }
@@ -110,7 +136,6 @@
   font-size: 5rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  /* text-shadow: 0px 8px 10px black; */
 }
 
 /* Positions page icon and applies animation */
@@ -126,23 +151,25 @@
 .paragraph-header {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 20px;
   text-align: center;
 }
 
+/* Positions elements within container */
 .container {
   display: table;
 	content: "";
 	clear: both;
 }
 
+/* Sizes and positions columns */
 .column {
 	float: left;
 	width: 50%;
 }
 
-/* Informational paragraphs */
+/* Styles and positioning for informational paragraphs */
 .paragraph p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -157,6 +184,7 @@ b {
   font-weight: 700;
 }
 
+/* Styles bigger text placed below paragraph text */
 .paragraph-hook {
 	font-family: 'Oswald', sans-serif;
 	font-size: 36px;
@@ -174,7 +202,16 @@ iframe {
   height: 330px;
 }
 
-/* Code for cookie consent component */
+/* Creates light grey divider between header and columns */
+.grey-divider {
+  margin: 80px auto 32px auto;
+  background-color: #ededed;
+  width: 100vh;
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* Styles and positions 'cookie consent' component */
 #cookieConsent {
 	display: none;
   background-color: #FF9800;
@@ -191,52 +228,56 @@ iframe {
   z-index: 9999;
 }
 
+/* Positions text within 'cookie consent' component */
 #cookie-info {
 	text-align: justify;
 	margin-left: 120px;
 	margin-right: 200px;
 	margin: 24px 200px 24px 120px;
+	line-height: 32px;
 }
 
+/* Positions informational hyperlink within 'cookie consent' component */
 #cookieConsent a {
   color: #536DFE;
   text-decoration: none;
 	padding-top: 40px;
 	font-weight: normal;
 	font-style: italic;
-}
-
-#cookieConsent a:hover {
 	text-decoration: underline;
-	transition: 0.4s;
 }
 
+/* Styles and positions 'That's OK' button */
 #cookieConsent a.cookieConsentOK {
 	position: fixed;
   color: #000;
 	font-style: normal;
 	font-weight: bold;
+	text-decoration: none;
   display: inline-block;
 	border: solid 4px white;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
   float: right;
-	bottom: 2vw;
+	bottom: 2.75vw;
 	right: 20px;
 	transition: 0.3s;
 }
 
+/* Changes color of 'That's OK' button on hover */
 #cookieConsent a.cookieConsentOK:hover {
   background-color: #fff;
 	text-decoration: none;
 }
 
+/* Styles and positions exclamation mark icon */
 #cookie-warning {
 	height: 100px;
 	position: fixed;
 }
 
+/* Styles and positions footer */
 footer {
   display: block;
   padding: 30px 0px;
@@ -248,6 +289,7 @@ footer {
   overflow: hidden;
 }
 
+/* Styles and positions list elements within footer */
 .inner_footer {
   display: block;
   margin: 0 auto;
@@ -255,6 +297,7 @@ footer {
   height: 100%;
 }
 
+/* Sizes and positions logo within footer */
 .inner-footer .logo-container {
   padding-left: 120px;
   padding-top: 10px;
@@ -265,6 +308,7 @@ footer {
   left: 20%;
 }
 
+/* Styles footer logo */
 .inner-footer .logo-container img {
   width: 150px;
   height: auto;
@@ -272,6 +316,7 @@ footer {
   border: solid 4px black;
 }
 
+/* Positions and sizes columns within footer */
 .inner-footer .footer-col {
   width: calc(21.66% - 20px);
   margin-right: 10px;
@@ -280,10 +325,12 @@ footer {
   height: 100%;
 }
 
+/* Positions last column within footer */
 .inner-footer .footer-col:last-child {
   margin-right: 0;
 }
 
+/* Styles and positions footer headers */
 .inner-footer .footer-col h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
@@ -293,6 +340,7 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Styles and positions footer links */
 .inner-footer .footer-col a {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -305,10 +353,13 @@ footer {
 
 /* Adjustments for mobile view */
 @media only screen and (max-width: 900px) {
+
+	/* Adjustments for navigation */
 	.navbar {
 		padding: 3.5px;
 	}
 
+	/* Adjustments for page banner elements */
 	.page-header {
     font-size: 3rem;
 		left: 35%;
@@ -319,6 +370,7 @@ footer {
 		top: 9%;
 	}
 
+	/* Adjustments for columns and elements within columns */
 	.column {
 		width: 100%;
 	}
@@ -333,6 +385,7 @@ footer {
     margin-top: 20px;
   }
 
+	/* Adjustments for 'cookie consent' component */
 	#cookie-info {
 		font-size: 20px;
 		text-align: justify;

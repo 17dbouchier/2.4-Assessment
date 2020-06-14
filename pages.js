@@ -1,4 +1,4 @@
-// Code for cookie consent component
+// Code for 'cookie consent' component
 $(document).ready(function(){
     setTimeout(function () {
         $("#cookieConsent").fadeIn(200);

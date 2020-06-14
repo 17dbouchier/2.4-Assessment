@@ -11,15 +11,21 @@
     <title>2.4 Assessment</title>
   </head>
   <body>
-
+    <!-- Code for all components contained within the landing page -->
     <section class="showcase" id="showcase">
       <h1 id="aiHeader">A I</h1>
       <div class="video-container">
+
+        <!-- These attributes instruct the video to loop infinitely without sound -->
         <video autoplay muted loop>
           <source src="img/landing-video.mp4" type=video/mp4>
         </video>
+
+        <!-- A translucent color overlay, in front of video but behind 'AI' header -->
         <div class="color-overlay"></div>
       </div>
+
+      <!-- Code for a 'scroll indictor', with each <span> tag representing an arrow -->
       <div class="scroll-indicator">
         <a href="#ai-world">
           <span></span>
@@ -27,6 +33,8 @@
           <span></span>
         </a>
       </div>
+
+      <!-- Navigational elements -->
       <nav>
         <div id="mySidenav" class="sidenav">
           <div id="sidenav-links">
@@ -36,28 +44,46 @@
             <a href="business.html">Business</a>
           </div>
         </div>
+
+        <!-- 'Hamburger' icon which toggles visibility of navigational elements -->
         <div class="menu-btn">
           <div class="menu-btn-burger"></div>
         </div>
       </nav>
     </section>
 
+    <!-- Code for 'Artificial Intelligence In Your World' section -->
     <section id="ai-world">
       <h1 class="section-heading">Artificial Intelligence In Your World</h1>
       <div class="grey-divider"></div>
+
+      <!-- Container for triple column layout -->
       <div class="container">
+        <!-- Column One -->
         <div class="column">
+
+          <!-- Image being used for column -->
           <img src="img/ai-brain.jpg" class="column-img" alt="icon">
+
+          <!-- Translucent color overlay, similar to what is seen on landing page -->
           <div class="col-overlay"></div>
+
+          <!-- White header w/ drop shadow -->
           <h3 class="column-heading">What is AI?</h3>
+
+          <!-- Smaller subheader, providing brief description -->
           <h6 class="column-subhead">How does Artificial Intelligence work?</h6>
         </div>
+
+        <!-- Column Two -->
         <div class="column">
           <img src="img/personal-use.jpg" class="column-img" alt="icon">
           <div class="col-overlay"></div>
           <h3 class="column-heading">Personal</h3>
           <h6 class="column-subhead">How can Artificial Intelligence work for you?</h6>
         </div>
+
+        <!-- Column Three -->
         <div class="column">
           <img src="img/business-handshake.jpeg" class="column-img" alt="icon">
           <div class="col-overlay"></div>
@@ -67,16 +93,23 @@
       </div>
     </section>
 
+    <!-- Code for 'What we are doing with AI' section -->
     <section id="with-ai">
       <h1 class="section-heading">What we are doing with AI</h1>
       <div class="grey-divider"></div>
+
+      <!-- Container for dual column layout, using the same design and CSS code as the triple column layout seen previously -->
       <div class="container">
+
+        <!-- Column One -->
         <div class="column">
           <img class="column-img" src="img/ai-in-action.jpg" alt="column-1-img">
           <div class="col-overlay"></div>
           <h3 class="column-heading">AI in Action</h3>
           <h6 class="column-subhead">How we are ensuring that the benefits of AI are accessible to everyone</h6>
         </div>
+
+        <!-- Column Two -->
         <div class="column">
           <img class="column-img" src="img/responsibility.jpg" alt="column-2-img">
           <div class="col-overlay"></div>
@@ -86,14 +119,21 @@
       </div>
     </section>
 
+    <!-- Code for 'Newsletter' section -->
     <section id="newsletter">
       <div class="grey-divider"></div>
+
+      <!-- Container for single column, single row -->
       <div class="container">
         <div class="column">
           <img class="column-img" src="img/interconnected-world.jpg" alt="newsletter-bg-img">
           <div class="col-overlay"></div>
+
+          <!-- This component utilises two subheads, in order to make room for the 'Subscribe' button -->
           <h6 class="column-subhead" id="nwsh-1">Be informed about how AI is going to affect your future</h6>
           <h6 class="column-subhead" id="nwsh-2">What's your self driving car?</h6>
+
+          <!-- Code for 'Subscribe' button, leading to a Google Form -->
           <div class="newsletter-button"><a href="https://forms.gle/8XWEaBjq6cZTjaGYA" target="_blank">Subscribe</a></div>
         </div>
       </div>

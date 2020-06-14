@@ -15,9 +15,13 @@
       <div class="page-banner" id=page-banner></div>
       <img class="page-icon" id="page-icon" src="img/ai-icon.png">
       <h1 class="page-header" id="page-header">What is AI?</h1>
+
+      <!-- Fixed-to-top navigational bar -->
       <nav>
         <div class="navbar">
           <a href="index.html">Home</a>
+
+          <!-- Highlights the link for the page that the user is currently viewing -->
           <a class="active" href="what-is-AI.html">What is AI?</a>
           <a href="personal.html">Personal</a>
           <a href="business.html">Business</a>
@@ -28,34 +32,70 @@
     <!-- Container for paragraphs and YouTube videos -->
     <section class="paragraph">
       <h1 class="paragraph-header">Artificial Intelligence</h1>
+
+      <!-- Container for first dual column section -->
       <div class="container">
+
+        <!-- Column One -->
         <div class="column">
+
+          <!-- Informational paragraph -->
           <p><b>Artificial Intelligence</b> is the simulation of human intelligence within a computer. Computers use artificial intelligence to perform a task which usually requires a level of human intelligence. Today, these tasks include the mundane, such as plagiarism checking and spam filters, as well as the more exciting, such as self-driving vehicles. However, the amount of tasks which can be completed using artificial intelligence is quickly growing, with many technology companies constantly pioneering new technologies which can be used to better humanity in the very near future. <br><br><center><span class="paragraph-hook">The future is bright ahead,<br>with Artificial Intelligence.</span></center></p>
         </div>
+
+        <!-- Column Two -->
         <div class="column">
+
+          <!-- Embedded YouTube video -->
           <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/noj4X1ujIOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
         </div>
       </div>
+
+      <!-- Grey divider to separate the two sections -->
+      <div class="grey-divider"></div>
+
       <h1 class="paragraph-header">Machine Learning</h1>
+
+      <!-- Container for second dual column section -->
       <div class="container">
+
+        <!-- Column One -->
         <div class="column">
           <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R9OHn5ZF4Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
         </div>
+
+        <!-- Column Two -->
         <div class="column">
-          <p id="paragraph-2"><b>Machine Learning</b> is how we are teaching the artificial intelligence machines of today. The complexity of artificial intelligence is so great that it is an impossible task for a human programmer to create an intelligence on their own. While a small set of code can be understood, the whole process of how an intelligence thinks is beyond comprehension. An intelligence learns through processing data; the more data that an intelligence has, the better that it will be at completing its task. This is why large tech firms such as Google are pioneers in AI technology: they have access to a magnitude of data due to the prevalence of their products in everyday life.</p>
+          <p class="paragraph-2"><b>Machine Learning</b> is how we are teaching the artificial intelligence machines of today. The complexity of artificial intelligence is so great that it is an impossible task for a human programmer to create an intelligence on their own. While a small set of code can be understood, the whole process of how an intelligence thinks is beyond comprehension. An intelligence learns through processing data; the more data that an intelligence has, the better that it will be at completing its task. This is why large tech firms such as Google are pioneers in AI technology: they have access to a magnitude of data due to the prevalence of their products in everyday life.</p>
         </div>
       </div>
     </section>
+
+    <!-- Code for 'cookie consent' component -->
     <div id="cookieConsent">
+
+      <!-- Exclamation point icon -->
       <img id="cookie-warning" src="img/warning.png" alt="warning">
-      <p id="cookie-info"><b>Hello!</b> This page includes embedded YouTube videos with 'privacy-enhanced mode', which may be using cookies to store your information once they are played. <a href="https://www.ghacks.net/2018/05/23/why-you-should-always-use-youtubes-privacy-enhanced-mode/" target="_blank">For more information, click here</a>.</p> <a class="cookieConsentOK">That's OK</a>
+
+      <!-- Brief information on embedded YouTube videos & cookies -->
+      <p id="cookie-info"><b>Hello!</b> This page includes embedded YouTube videos with 'privacy-enhanced mode', which may be using cookies to store your information once they are played. <a href="https://www.ghacks.net/2018/05/23/why-you-should-always-use-youtubes-privacy-enhanced-mode/" target="_blank">For more information, click here</a>.</p>
+
+      <!-- 'That's OK' button -->
+      <a class="cookieConsentOK">That's OK</a>
     </div>
+
+    <!-- Code for footer section -->
     <footer>
+
+      <!-- Divides footer elements into columns -->
       <div class="inner-footer">
+
+        <!-- Logo for footer -->
         <div class="logo-container">
           <img src="img/what-is-AI.png">
         </div>
 
+        <!-- Column One -->
         <div class="footer-col">
           <h1>Artificial Intelligence</h1>
           <a href="index.html">Home</a>
@@ -64,6 +104,7 @@
           <a href="business.html">Business</a>
         </div>
 
+        <!-- Column Two -->
         <div class="footer-col">
           <h1>About Us</h1>
           <a href="#">What we do</a>
@@ -71,6 +112,7 @@
           <a href="#">Responsibility</a>
         </div>
 
+        <!-- Column Three -->
         <div class="footer-col">
           <h1>Contact Us</h1>
           <a href="https://forms.gle/8XWEaBjq6cZTjaGYA" target="_blank">Newsletter</a>
@@ -79,6 +121,8 @@
       </div>
     </footer>
   </body>
+
+  <!-- Integrates JavaScript & Jquery with page -->
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="pages.js"></script>
 </html>

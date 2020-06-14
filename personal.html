@@ -10,14 +10,19 @@
     <title>Personal</title>
   </head>
   <body>
+    <!-- Container for page banner elements -->
     <header class="showcase">
       <div class="page-banner"></div>
       <img class="page-icon" src="img/personal-banner-icon.png">
       <h1 class="page-header">Personal</h1>
+
+      <!-- Fixed-to-top navigational bar -->
       <nav>
         <div class="navbar">
           <a href="index.html">Home</a>
           <a href="what-is-AI.html">What is AI?</a>
+
+          <!-- Highlights the link for the page that the user is currently viewing -->
           <a class="active" href="personal.html">Personal</a>
           <a href="business.html">Business</a>
         </div>
@@ -26,32 +31,71 @@
     <!-- Container for paragraphs and YouTube videos -->
     <section class="paragraph">
       <h1 class="paragraph-header">Autonomous Vehicles</h1>
-        <div class="container">
-          <div class="column">
-            <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. Eligendi, hic. Fugit iste magnam possimus laboriosam corporis omnis, molestias ipsa cupiditate suscipit assumenda dolores nesciunt earum accusantium alias vero atque libero praesentium? Optio beatae quibusdam dolores maxime fugiat possimus alias sapiente pariatur accusantium dolorem sunt eaque, doloribus sed, dignissimos veniam nostrum hic rerum odit et quisquam, eius! Libero unde cumque doloremque ad officia dolorem pariatur dolor tenetur blanditiis earum ab, facere saepe aliquam quod corrupti magnam nemo quam. Modi incidunt fugiat omnis laboriosam molestiae quia repudiandae, cupiditate minus necessitatibus labore! Dicta.</p>
-          </div>
-          <div class="column">
-            <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uHbMt6WDhQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-          </div>
-        </div>
-      <h1 class="paragraph-header">Home Assistants</h1>
+
+      <!-- Container for first dual column section -->
       <div class="container">
+
+        <!-- Column One -->
+        <div class="column">
+
+          <!-- Informational paragraph -->
+          <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. Eligendi, hic. Fugit iste magnam possimus laboriosam corporis omnis, molestias ipsa cupiditate suscipit assumenda dolores nesciunt earum accusantium alias vero atque libero praesentium? Optio beatae quibusdam dolores maxime fugiat possimus alias sapiente pariatur accusantium dolorem sunt eaque, doloribus sed, dignissimos veniam nostrum hic rerum odit et quisquam, eius! Libero unde cumque doloremque ad officia dolorem pariatur dolor tenetur blanditiis earum ab, facere saepe aliquam quod corrupti magnam nemo quam. Modi incidunt fugiat omnis laboriosam molestiae quia repudiandae, cupiditate minus necessitatibus labore! Dicta.</p>
+        </div>
+
+        <!-- Column Two -->
+        <div class="column">
+
+          <!-- Embedded YouTube video -->
+          <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uHbMt6WDhQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+      </div>
+
+      <!-- Grey divider to separate the two sections -->
+      <div class="grey-divider"></div>
+
+      <h1 class="paragraph-header">Home Assistants</h1>
+
+      <!-- Container for second dual column section -->
+      <div class="container">
+
+        <!-- Column One -->
         <div class="column" class="vid-column">
           <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r0iLfAV0pIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
         </div>
+
+        <!-- Column Two -->
         <div class="column" class="txt-column">
           <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. Eligendi, hic. Fugit iste magnam possimus laboriosam corporis omnis, molestias ipsa cupiditate suscipit assumenda dolores nesciunt earum accusantium alias vero atque libero praesentium? Optio beatae quibusdam dolores maxime fugiat possimus alias sapiente pariatur accusantium dolorem sunt eaque, doloribus sed, dignissimos veniam nostrum hic rerum odit et quisquam, eius! Libero unde cumque doloremque ad officia dolorem pariatur dolor tenetur blanditiis earum ab, facere saepe aliquam quod corrupti magnam nemo quam. Modi incidunt fugiat omnis laboriosam molestiae quia repudiandae, cupiditate minus necessitatibus labore! Dicta.</p>
         </div>
       </div>
     </section>
-    <p id="cookie-info"><b>Hello!</b> This page includes embedded YouTube videos with 'privacy-enhanced mode', which may be using cookies to store your information once they are played. <a href="https://www.ghacks.net/2018/05/23/why-you-should-always-use-youtubes-privacy-enhanced-mode/" target="_blank">For more information, click here</a>.</p> <a class="cookieConsentOK">That's OK</a>
   </body>
+
+  <!-- Code for 'cookie consent' component -->
+  <div id="cookieConsent">
+
+    <!-- Exclamation point icon -->
+    <img id="cookie-warning" src="img/warning.png" alt="warning">
+
+    <!-- Brief information on embedded YouTube videos & cookies -->
+    <p id="cookie-info"><b>Hello!</b> This page includes embedded YouTube videos with 'privacy-enhanced mode', which may be using cookies to store your information once they are played. <a href="https://www.ghacks.net/2018/05/23/why-you-should-always-use-youtubes-privacy-enhanced-mode/" target="_blank">For more information, click here</a>.</p>
+
+    <!-- 'That's OK' button -->
+    <a class="cookieConsentOK">That's OK</a>
+  </div>
+
+  <!-- Code for footer section -->
   <footer>
+
+    <!-- Divides footer elements into columns -->
     <div class="inner-footer">
+
+      <!-- Logo for footer -->
       <div class="logo-container">
         <img src="img/what-is-AI.png">
       </div>
 
+      <!-- Column One -->
       <div class="footer-col">
         <h1>Artificial Intelligence</h1>
         <a href="index.html">Home</a>
@@ -60,6 +104,7 @@
         <a href="business.html">Business</a>
       </div>
 
+      <!-- Column Two -->
       <div class="footer-col">
         <h1>About Us</h1>
         <a href="#">What we do</a>
@@ -67,6 +112,7 @@
         <a href="#">Responsibility</a>
       </div>
 
+      <!-- Column Three -->
       <div class="footer-col">
         <h1>Contact Us</h1>
         <a href="https://forms.gle/8XWEaBjq6cZTjaGYA" target="_blank">Newsletter</a>
@@ -74,4 +120,8 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Integrates JavaScript & Jquery with page -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="pages.js"></script>
 </html>
