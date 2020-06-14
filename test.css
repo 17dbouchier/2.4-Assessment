@@ -56,7 +56,7 @@
 
 /* Style the navigation menu */
 .navbar {
-	animation: slide-right 2s ease-in-out;
+	animation: slide-right 2.5s ease-in-out;
 	top: 0;
 	position: fixed;
   width: 100%;
@@ -91,7 +91,7 @@
 
 /* Configures size and colour of page banner and applies animation */
 .page-banner {
-	animation: slide-right 1.5s ease-in-out;
+	animation: slide-right 2s ease-in-out;
 	background-color: #0B1F4D;
 	width: 100%;
 	height: 25vh;
@@ -101,6 +101,7 @@
 /* Positions page header and applies animation */
 .page-header {
   animation: fade-in-down 4s;
+	animation-delay: 0s;
   position: absolute;
   top: 14%;
   left: 20%;
@@ -135,6 +136,7 @@
   display: table;
 	content: "";
 	clear: both;
+	height: 100%;
 }
 
 .column {
@@ -170,8 +172,8 @@ iframe {
   border: solid 4px black;
   margin-top: 3%;
   border-radius: 24px;
-  width: 40vw;
-  height: 330px;
+	margin: 2.5% 50px 0px 50px;
+	width: 85%;
 }
 
 /* Code for cookie consent component */
@@ -192,7 +194,6 @@ iframe {
 }
 
 #cookie-info {
-	text-align: justify;
 	margin-left: 120px;
 	margin-right: 200px;
 	margin: 24px 200px 24px 120px;
@@ -215,7 +216,6 @@ iframe {
 	position: fixed;
   color: #000;
 	font-style: normal;
-	font-weight: bold;
   display: inline-block;
 	border: solid 4px white;
   border-radius: 5px;
@@ -312,6 +312,7 @@ footer {
 	.page-header {
     font-size: 3rem;
 		left: 35%;
+		top: 15%;
   }
 
 	.page-icon {
@@ -324,7 +325,7 @@ footer {
 	}
 
 	.paragraph p {
-		margin: 0 50px;
+		margin: 0 10%;
 	}
 
   iframe {
@@ -332,24 +333,6 @@ footer {
     height: 270px;
     margin-top: 20px;
   }
-
-	#cookie-info {
-		font-size: 20px;
-		text-align: justify;
-		margin: 24px 12% 72px 120px;
-	}
-
-	#cookie-warning {
-		margin-top: 4vw;
-	}
-
-	#cookieConsent a.cookieConsentOK {
-		width: 70%;
-		margin: 0 auto;
-		text-align: center;
-		right: 0;
-		left: 0;
-	}
 
   /* Adjustments for the footer */
   .footer .inner-footer {
