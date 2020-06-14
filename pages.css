@@ -187,7 +187,7 @@ b {
 /* Styles bigger text placed below paragraph text */
 .paragraph-hook {
 	font-family: 'Oswald', sans-serif;
-	font-size: 36px;
+	font-size: 40px;
 	font-weight: 400;
 	line-height: 48px;
 	text-align: center;
@@ -198,7 +198,7 @@ iframe {
   border: solid 4px black;
   margin-top: 3%;
   border-radius: 24px;
-  width: 40vw;
+  width: 42vw;
   height: 330px;
 }
 
@@ -383,7 +383,12 @@ footer {
     width: 480px;
     height: 270px;
     margin-top: 20px;
+		margin-bottom: 20px;
   }
+
+	.grey-divider {
+		margin-top: 40px;
+	}
 
 	/* Adjustments for 'cookie consent' component */
 	#cookie-info {
